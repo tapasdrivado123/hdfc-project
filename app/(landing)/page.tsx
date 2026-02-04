@@ -61,17 +61,17 @@ function page() {
         </header>
 
         <div className="relative flex flex-col items-center justify-center">
-          <ul className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <ul className="grid w-full grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
             {cards.map(({ icon, title, description }, index) => (
               <li
                 key={index}
-                className="shadow-choose-us-card grid grid-rows-[auto_1fr] space-y-4 rounded-2xl bg-white p-4 text-left md:pt-[1.25rem]"
+                className="shadow-choose-us-card grid grid-rows-[auto_1fr] space-y-4 rounded-2xl bg-white shadow-[0_6px_22px_0_#00000017] p-4 text-left md:pt-5"
               >
                 <div className="relative size-15">
                   <Image
                     src={icon}
                     className="h-15 w-auto object-contain"
-                    alt=""
+                    alt={title}
                   />
                 </div>
 
